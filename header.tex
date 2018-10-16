@@ -44,12 +44,19 @@
 \usepackage{multirow}
 \usepackage{mdwmath}
 \usepackage{mdwtab}
-\usepackage{todonotes}
 \usepackage[tight,footnotesize]{subfigure}
 \usepackage[caption=false,font=footnotesize]{subfig}
 \usepackage{url}
 \usepackage{xspace}
 \usepackage{graphicx}
+
+\usepackage{xargs}
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+\newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
+\newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
+\newcommandx{\thiswillnotshow}[2][1=]{\todo[enable,#1]{#2}}
 
 \newcommand{\ignore}[1]{}
 \newcommand{\mytodo}[1]{\todo[inline]{#1}}
