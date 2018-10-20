@@ -1,4 +1,3 @@
-\usepackage{listings}
 \usepackage{color}
 \usepackage{alltt}
 \usepackage{epsfig}
@@ -23,6 +22,7 @@
 \usepackage[tight,footnotesize]{subfigure}
 \usepackage{afterpage}
 
+\usepackage{listings,lstautogobble}
 \lstset{
     language=C,
     basicstyle=\footnotesize,
@@ -34,8 +34,27 @@
     showspaces=false,
     showtabs=true,
     captionpos=b,
-    tabsize=8
+    tabsize=8,
+    breaklines=true,
+    breakatwhitespace=false,
+    %backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize
+    %escapseinside={\%*}{*)}
 }
+%\usepackage{minted}
+%\setminted[c] {
+%  fontsize=\footnotesize,
+%  linenos,
+%  breaklines,
+%  frame=lines,
+%  xleftmargin=20pt
+%}
+
+
 
 \usepackage[cmex10]{amsmath}
 \interdisplaylinepenalty=2500
