@@ -27,65 +27,7 @@
 % 10pt          To set in 10-point type instead of 9-point.
 % 11pt          To set in 11-point type instead of 9-point.
 % authoryear    To obtain author/year citation style instead of numeric.
-
-\usepackage{listings}
-\usepackage{color}
-\usepackage{alltt}
-\usepackage{epsfig}
-\usepackage{multirow}
-\usepackage{multicol}
-\usepackage{url}
-\usepackage{algorithm}
-\usepackage{algorithmic}
-\usepackage{times}
-\usepackage{url}
-\usepackage{alltt}
-\usepackage{epsfig}
-\usepackage{fancyhdr}
-%\usepackage{amsmath}
-\usepackage{url}
-\usepackage{wrapfig}
-\usepackage{color}
-\usepackage{xspace}
-\usepackage{pifont}
-\usepackage{tabularx}
-\usepackage{sidecap}
-\usepackage{graphicx}
-\usepackage[tight,footnotesize]{subfigure}
-\usepackage{afterpage}
-
-
-\lstset{
-    language=C,
-    basicstyle=\footnotesize,
-    numbers=left,
-    numberstyle=\tiny,
-    frame=single,
-    columns=fullflexible,
-    showstringspaces=false,
-    showspaces=false,
-    showtabs=true,
-    captionpos=b,
-    tabsize=8
-}
-
-\usepackage[cmex10]{amsmath}
-\interdisplaylinepenalty=2500
-\usepackage{amssymb}
-\usepackage{alltt}
-\usepackage{multirow}
-\usepackage{mdwmath}
-\usepackage{mdwtab}
-\usepackage{todonotes}
-\usepackage[tight,footnotesize]{subfigure}
-\usepackage[caption=false,font=footnotesize]{subfig}
-\usepackage{url}
-\usepackage{xspace}
-\usepackage{graphicx}
-\newcommand{\CHiP}{\textit{CHiP}\xspace}
-\newcommand{\ignore}[1]{}
-\newcommand{\mytodo}[1]{\todo[inline]{#1}}
-\newcommand{\textds}[1]{\texttt{\small{#1}}}
+\include{header}
 \begin{document}
 
 \conferenceinfo{WXYZ '05}{date, City.} 
@@ -95,13 +37,13 @@
 \titlebanner{Paper submission for Conference 'XX}        % These are ignored unless
 \preprintfooter{}   % 'preprint' option specified.
 
-\title{Title of the paper}
+\title{A Template for Research Papers}
 %\subtitle{Subtitle Text, if any}
 
-%\numberofauthors{4}
+%\numberofauthors{1}
 \authorinfo{}
 \ignore{
-\authorinfo{Pranith Kumar \and Second Author}
+\authorinfo{Pranith Kumar} %\and Second Author}
            {Georgia Institute of Technology}
            {\{pranith, second.author\}@gatech.edu}
 }
@@ -118,14 +60,7 @@ offloading, rpc
 \keywords
 compute intensive, benchmarks
 
-\input{intro}
-\input{related}
-\input{background}
-\input{motivation}
-\input{definitions}
-\input{analysis}
-\input{results}
-\input{futurework}
+\include{body}
 
 %\appendix
 %\section{Appendix Title}
